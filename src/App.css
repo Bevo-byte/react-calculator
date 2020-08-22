@@ -1,32 +1,147 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+.App img{
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    max-height: 40px
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    background: url("https://wallpapercave.com/wp/EWb7LFn.jpg") no-repeat fixed center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    background-size: cover;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.calculator {
+    background: #45484d;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #45484d 0%, #000000 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #45484d 0%, #000000 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #45484d 0%, #000000 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000', GradientType=0);
+    /* IE6-9 */
+    padding: 20px;
+    width: 220px;
+    height: 350px;
+    border-radius: 10px;
+    box-shadow: inset 5px 0 10px -5px #45484d, inset -5px 0 10px -5px #45484d, inset 0px -5px 10px -2px #45484d, 0 0 1px 2px #45484d, 0 10px 20px 0 #45484d;
+    text-align: center;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.calculator input {
+    padding: 10px;
+    margin: 10px;
+    background: #aed3b1;
+    direction: rtl;
+    font-size: 18px;
+    font-family: 'Orbitron', sans-serif;
+    max-width: 75%;
+}
+
+.outline {
+    width: 220px;
+    margin: auto;
+    margin-bottom: 15px;
+    background: rgb(125, 126, 125);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
+.clear {
+    background: rgb(214, 18, 47)!important;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(214, 18, 47, 1) 0%, rgba(197, 15, 43, 1) 44%, rgba(171, 11, 35, 1) 100%)!important;
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(214, 18, 47, 1) 0%, rgba(197, 15, 43, 1) 44%, rgba(171, 11, 35, 1) 100%)!important;
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(214, 18, 47, 1) 0%, rgba(197, 15, 43, 1) 44%, rgba(171, 11, 35, 1) 100%)!important;
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6122f', endColorstr='#ab0b23', GradientType=1)!important;
+    color: gainsboro;
+}
+
+.row {
+    display: block;
+}
+
+.row button {
+    width: 40px;
+    height: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    border-bottom-left-radius: 100% 10px;
+    border-bottom-right-radius: 100% 10px;
+    border-top-left-radius: 40px 10px;
+    border-top-right-radius: 40px 10px;
+    background: rgb(125, 126, 125);
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, rgba(125, 126, 125, 1) 0%, rgba(14, 14, 14, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    color: gainsboro;
+    font-size: 16px;
+    border-color: #595959;
+    font-family: 'Orbitron', sans-serif;
+}
+
+#title {
+    font-weight: bold;
+    color: #e3e4e8;
+}
+
+.calculator .row button:focus {
+    outline: 0;
+}
+
+.calculator .row button:active {
+    filter: brightness(85%);
+}
+
+.plus {
+    height: 70px!important;
+    float: right;
+    margin-right: 14px!important;
+    margin-left: -6px!important;
 }
